@@ -39,16 +39,30 @@
 
     &__title {
         margin-bottom: 25px;
+        transform: translate(0, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
         @media (max-width: $mobile) {
             margin-bottom: 20px;
+        }
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
         }
     }
 
     &__text {
-        margin-bottom: 35px;
+        margin-bottom: 10px;
+        transform: translate(0, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
         @media (max-width: $mobile) {
             padding: 0 15px;
-            margin-bottom: 25px;
+        }
+        &._active{
+            transform: translate(0, 0);
+            opacity: 1;
+            transition: all 0.8s ease 0.4s;
         }
     }
 
@@ -67,6 +81,38 @@
         }
     }
 }
+
+.info {
+    margin-bottom: 35px;
+    @media (max-width: $mobile) {
+        margin-bottom: 25px;
+    }
+
+    // .info__tel
+    &__tel,
+    &__telegram {
+        display: flex;
+        font-size: rem(18);
+        @media (any-hover: hover) {
+            &:hover {
+                color: #ff6464;
+            }
+        }
+    }
+
+    // .info__telegram
+    &__tel {
+        margin-bottom: rem(8);
+    }
+}
+
+._icon-telegram:before,
+._icon-phone:before {
+    display: inline;
+    font-size: rem(22);
+    margin-right: 10px;
+}
+
 //====================================================================================================
 .recent-posts {
     background: #edf7fa;

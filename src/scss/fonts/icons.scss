@@ -42,15 +42,21 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-._icon-fb:before {
-    content: "\e900";
-}
-._icon-insta:before {
-    content: "\e901";
-}
 ._icon-linkedin:before {
     content: "\e902";
 }
-._icon-twiter:before {
+._icon-gmail:before {
     content: "\e903";
+}
+._icon-github:before {
+    content: "\e904";
+}
+._icon-facebook:before {
+    content: "\e905";
+}
+._icon-phone:before {
+    content: "\e900";
+}
+._icon-telegram:before {
+    content: "\e901";
 }
